@@ -1,4 +1,4 @@
-# Проект по тестированию UI части сайта интернет-магазина Офисмаг
+# Проект по тестированию UI части интернет-магазина Офисмаг
 > <a target="_blank" href="https://www.officemag.ru/">Ссылка на Интернет-магазин</a>
 
 #### Список проверок, реализованных в автотестах
@@ -10,7 +10,7 @@
 ### Структура проекта
 
 ### Проект реализован с использованием
-Python Pytest Selene Jenkins Selenoid Jenkins Allure reports Allure TestOps Jira Telegram 
+Python Pytest Selene Jenkins Selenoid Jenkins Allure reports Allure TestOps Telegram 
 
 <p  align="center">
   <code><img width="5%" title="Python" src="design_resources/logo/python.png"></code>
@@ -46,7 +46,7 @@ Python Pytest Selene Jenkins Selenoid Jenkins Allure reports Allure TestOps Jira
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-pytest tests/
+pytest tests
 ```
 
 ----
@@ -75,6 +75,6 @@ allure serve allure-results
 ----
 ### <img width="5%" title="Telegram" src="design_resources/logo/tg.png"> Telegram
 
-#### Уведовление в Telegram bot после прохождения тестов
+#### Уведомление в Telegram bot после прохождения тестов
 
 ![This is an image](design_resources/images/)
