@@ -9,7 +9,7 @@ def setting():
     load_dotenv()
     login: str = os.getenv("LOGIN")
     password: str = os.getenv("PASSWORD")
-    remote_url = f'http://77.91.123.143:4444/wd/hub'
+    remote_url = f'http://77.91.123.143:8080/wd/hub'
     return remote_url
 
 
