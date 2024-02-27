@@ -9,7 +9,7 @@ def setting():
     load_dotenv()
     login: str = os.getenv("LOGIN")
     password: str = os.getenv("PASSWORD")
-    remote_url = f'http://77.91.123.143:8080/wd/hub'
+    remote_url = f'http://77.91.123.143:4444/wd/hub'
     return remote_url
 
 
@@ -24,7 +24,7 @@ class Config(BaseSettings):
     window_height: int = 1080
     timeout: float = 10.0
 
-    remote_version: Optional[str] = '121'
+    remote_version: Optional[str] = '120'
     remote_enableVNC: bool = True
     remote_enableVideo: bool = True
 
