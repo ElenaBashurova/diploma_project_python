@@ -1,6 +1,6 @@
 import allure
-from selene import browser, be, by
-from pages.configs import Helpers
+from selene import browser
+from pages.configs_helper import Helpers
 
 
 class ChapterProducts(Helpers):

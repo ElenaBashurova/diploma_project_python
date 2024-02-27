@@ -1,13 +1,12 @@
 import allure
-from pages.configs import Helpers
+from pages.configs_helper import Helpers
 from selene import have
 from selene import browser
 
 
-
 class Page(Helpers):
     def open_page(self):
-        with allure.step('https://www.officemag.ru'):
+        with allure.step('Открыть страницу https://www.officemag.ru'):
             browser.open('/')
             self.click_element('#fancybox-close')
             self.click_element('.js-cityDetector')

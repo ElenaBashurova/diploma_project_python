@@ -1,6 +1,5 @@
 import allure
 import pytest
-
 from pages.product_pages import product_name
 from pages.product_select import search_name
 
@@ -12,7 +11,7 @@ from pages.product_select import search_name
 @pytest.mark.xfail(reason='Этот тест не стабилен')
 @allure.link('https://www.officemag.ru', name='Test')
 @allure.title('Поиск товара "Кресло компьютерное"')
-def test_furniture_category(browser_configs):
+def test_search_product(browser_configs):
     search_name.open_page()
     search_name.search_product_enter("Кресло компьютерное")
     product_name.page_name_product("Кресло BRABIX «Fly MG-396», с подлокотниками, сетка, черное, 532083")
@@ -31,7 +30,6 @@ def test_search_by_foreign_name(browser_configs):
     product_name.foreign_name_product('Кофе в зернах JACOBS «Crema» 1 кг')
 
 
-@pytest.mark.xfail(reason='Этот тест не стабилен')
 @allure.title('Поиск товара "Чай"')
 def test_search_by_foreign_keyboard_layout(browser_configs):
     search_name.open_page()
