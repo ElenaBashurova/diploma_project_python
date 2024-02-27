@@ -24,7 +24,7 @@ class Config(BaseSettings):
     window_height: int = 1080
     timeout: float = 10.0
 
-    remote_version: Optional[str] = '120'
+    remote_version: Optional[str] = '120.0'
     remote_enableVNC: bool = True
     remote_enableVideo: bool = True
 
