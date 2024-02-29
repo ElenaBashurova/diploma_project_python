@@ -5,6 +5,10 @@ from configs import config, setting
 from utils import attach
 
 
+
+API_URL = "https://www.officemag.ru"
+
+
 @pytest.fixture()
 def browser_configs():
     browser.config.base_url = config.base_url
