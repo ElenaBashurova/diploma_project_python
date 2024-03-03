@@ -79,7 +79,7 @@ allure/bin/allure.bat serve tests/api/allure-results
 
 ----
 
-## <img width="5%" title="Allure Report" src="design_resources/logo/allure_report.png"> Allure Report
+## <img width="5%" title="Allure Report" src="design_resources/logo/allure_report.png"> Просмотр отчета по пройденным автотестам Allure Report
 ## [Ссылка на отчет](https://jenkins.autotests.cloud/job/project_bashurova_python/48/allure/)
 ### Результаты тестов в Allure report
 ![This is an image](/design_resources/screens/Allure_results.jpg)  
