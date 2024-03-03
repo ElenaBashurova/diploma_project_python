@@ -1,9 +1,6 @@
 import pytest
 from selene import browser
-from selenium import webdriver
-from configs import config, setting
-
-
+from utils import attach
 
 LOGIN = "e_nikolaevnaya@mail.ru"
 PASSWORD = "e_nikolaevnaya"
@@ -14,5 +11,12 @@ API_URL = "ttps://demowebshop.tricentis.com"
 @pytest.fixture()
 def browser_configs():
     browser.config.base_url = 'https://demowebshop.tricentis.com'
-    return browser_configs
 
+    yield
+
+    attach.add_screenshot(browser)
+    attach.add_logs(browser)
+    attach.add_html(browser)
+    attach.add_video(browser)
+
+    browser.quit()

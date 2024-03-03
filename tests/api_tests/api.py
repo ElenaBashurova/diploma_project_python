@@ -1,5 +1,6 @@
 import allure
 import logging
+import pytest
 import requests
 from allure_commons._allure import step
 import utils.schema
@@ -9,6 +10,7 @@ from utils.utils_api import post_reqres
 from jsonschema import validate
 
 
+@pytest.mark.api
 @allure.tag('api')
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
@@ -27,6 +29,7 @@ def test_page_login(browser_configs):
         browser.element(".page-title").should(have.text('Welcome, Please Sign In!'))
 
 
+@pytest.mark.api
 @allure.tag('api')
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
@@ -58,6 +61,7 @@ def test_add_product_in_cart(browser_configs):
         browser.element('.product-title').should(have.text('Computing and Internet'))
 
 
+@pytest.mark.api
 @allure.tag('api')
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
@@ -92,6 +96,7 @@ def test_add_product_in_cart_fail(browser_configs):
         browser.element('#bar-notification').should(have.text('Enter valid recipient email'))
 
 
+@pytest.mark.api
 @allure.tag('api')
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
@@ -114,6 +119,7 @@ def test_search_product(browser_configs):
         browser.element('.search-box-button').click()
 
 
+@pytest.mark.api
 @allure.tag('api')
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')

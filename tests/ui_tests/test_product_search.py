@@ -11,18 +11,21 @@ from pages.product_select import search_name
 @pytest.mark.xfail(reason='Этот тест не стабилен')
 @allure.link('https://www.officemag.ru', name='Test')
 @allure.title('Поиск товара "Кресло компьютерное"')
+@pytest.mark.web
 def test_search_product(browser_configs):
     search_name.open_page()
     search_name.search_product_enter("Кресло компьютерное")
     product_name.page_name_product("Кресло BRABIX «Fly MG-396», с подлокотниками, сетка, черное, 532083")
 
 
+@pytest.mark.web
 @allure.title('Поиск товара "Шкаф"')
 def test_search_by_part_of_name(browser_configs):
     search_name.open_page()
     search_name.search_part_product('Шк')
 
 
+@pytest.mark.web
 @allure.title('Поиск товара "Кофе"')
 def test_search_by_foreign_name(browser_configs):
     search_name.open_page()
@@ -30,6 +33,7 @@ def test_search_by_foreign_name(browser_configs):
     product_name.foreign_name_product('Кофе в зернах JACOBS «Crema» 1 кг')
 
 
+@pytest.mark.web
 @allure.title('Поиск товара "Чай"')
 def test_search_by_foreign_keyboard_layout(browser_configs):
     search_name.open_page()
