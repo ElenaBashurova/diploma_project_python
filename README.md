@@ -69,8 +69,10 @@ Python Pytest Selene Jenkins Selenoid Jenkins Allure reports Allure TestOps Tele
 ```bash
 allure/bin/allure.bat serve tests/api_tests/allure-results
 ```
+
+<!-- Allure report -->
 ----
-### <img width="5%" title="Allure Report" src="resources/logo/allure_report.png"> Allure report
+### <img width="5%" title="Allure Report" src="resources/logo/allure_report.png">
 ### [Report](https://jenkins.autotests.cloud/job/project_bashurova_python/2/allure/)
 #### Результаты тестов в Allure отчете
 ![This is an image](/design_resources/screens/Allure_results.jpg)  
