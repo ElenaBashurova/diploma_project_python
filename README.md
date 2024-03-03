@@ -6,7 +6,7 @@
 - [x] Проверка акционных товаров
 - [x] Проверка товаров участвующих в распродаже
 - [x] Проверка поиска товаров через поисковую строку
-- 
+
 #### Список проверок, реализованных в API автотестах
 - [x] Проверка успешной авторизации
 - [x] Проверка добавления товара в козину
@@ -55,18 +55,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 environment='remote' pytest tests/ui_tests && pytest tests/api_tests
 ```
-
-----
-### <img width="5%" title="Jenkins" src="design_resources/logo/jenkins.png"> Запуск проекта в Jenkins
-
-### [Jenkins](https://jenkins.autotests.cloud/job/project_bashurova_python)
-
-#### При нажатии на "Build with Parameters" начнется сборка тестов и их прохождение, через виртуальную среду в Selenoid
-![This is an image](design_resources/logo/jenkins.png)
-
 Получение отчёта allure:
 ```bash
 allure serve allure-results
+
+----
+
 ``` 
 <!-- Allure report -->
 ----
