@@ -70,15 +70,15 @@ allure/bin/allure.bat serve tests/api/allure-results
 ```
 ### Результаты тестов в Allure report
 ![This is an image](/design_resources/screens/Allure_results.jpg)  
-----
 
+<!-- Jira -->
+----
 ## <img width="5%" title="Задача в Jire" src="design_resources/logo/jira.png"> Создание задачи в Jira
 ## [Ссылка на задачу](https://jira.autotests.cloud/browse/HOMEWORK-1138)
 ![This is an image](/design_resources/screens/Jira.jpg) 
 
-
+<!-- Allure report -->
 ----
-
 ## <img width="5%" title="Allure Report" src="design_resources/logo/allure_report.png"> Просмотр отчета по пройденным автотестам Allure Report
 ## [Ссылка на отчет](https://jenkins.autotests.cloud/job/project_bashurova_python/48/allure/)
 ### Результаты тестов в Allure report
@@ -89,7 +89,7 @@ allure/bin/allure.bat serve tests/api/allure-results
 
 <!-- Telegram -->
 ----
-## <img width="5%" title="Telegram" src="design_resources/logo/tg.png"> Отчет о пройденных тестах в Telegram
+## <img width="5%" title="Telegram" src="design_resources/logo/tg.png"> Отчет в Telegram
 
 ### Уведомление в Telegram bot после прохождения тестов
 
