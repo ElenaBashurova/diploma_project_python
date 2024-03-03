@@ -33,7 +33,8 @@ def test_page_login(browser_configs_api):
 @allure.tag('api')
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
-@allure.story('Добавить товар в корзину')
+@allure.story('Корзина')
+@allure.title('Добавить товар в корзину')
 def test_add_product_in_cart(browser_configs_api):
     with step("Добавить продукт в корзину"):
         response = post_reqres("/addproducttocart/catalog/45/1/1", data={
@@ -65,7 +66,8 @@ def test_add_product_in_cart(browser_configs_api):
 @allure.tag('api')
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
-@allure.story('Неудачное добавление товара в корзину')
+@allure.story('Корзина')
+@allure.title('Неудачное добавление товара в корзину')
 def test_add_product_in_cart_fail(browser_configs_api):
     with step("Добавить продукт в корзину"):
         response = post_reqres("/addproducttocart/details/1/2", data={
@@ -100,7 +102,8 @@ def test_add_product_in_cart_fail(browser_configs_api):
 @allure.tag('api')
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
-@allure.story('Найти интересующий товар')
+@allure.story('Поиск')
+@allure.title('Найти интересующий товар')
 def test_search_product(browser_configs_api):
     with step("Найти продукт"):
         response = post_reqres("/catalog/searchtermautocomplete?term=Computer", data={
@@ -123,7 +126,8 @@ def test_search_product(browser_configs_api):
 @allure.tag('api')
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
-@allure.story('Отправить email')
+@allure.story('Email')
+@allure.title('Отправить email')
 def test_mail_send(browser_configs_api):
     with step("Отправить письмо на емайл"):
         response = post_reqres("/subscribenewsletter", json={"Email": EMAIL}, allow_redirects=False)
