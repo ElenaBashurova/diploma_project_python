@@ -89,7 +89,7 @@ allure/bin/allure.bat serve tests/api/allure-results
 
 <!-- Telegram -->
 ----
-## <img width="5%" title="Telegram" src="design_resources/logo/tg.png"> Telegram
+## <img width="5%" title="Telegram" src="design_resources/logo/tg.png"> Отчет о пройденных тестах в Telegram
 
 ### Уведомление в Telegram bot после прохождения тестов
 
