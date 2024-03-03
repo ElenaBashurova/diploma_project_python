@@ -41,7 +41,7 @@ Python Pytest Selene Jenkins Selenoid Jenkins Allure reports Allure TestOps Tele
 #### 2. Выбрать пункт **Собрать с параметрами**
 #### 3. В случае необходимости изменить параметры, выбрав значения из выпадающих списков
 #### 4. Нажать **Собрать**
-#### 5. Результат запуска сборки можно посмотреть в отчёте Allure
+#### 5. Результат запуска сборки можно посмотреть в отчёте Allure-testops
 
 ![This is an image](/design_resources/screens/allure_testops.jpg)
 
