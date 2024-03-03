@@ -41,12 +41,20 @@ Python Pytest Selene Jenkins Selenoid Jenkins Allure reports Allure TestOps Tele
 ----
 ### Локальный запуск
 
-> Для локального запуска необходимо выполнить команду в СLI:
+> Для локального запуска UI тестов необходимо выполнить команду в СLI:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-pytest tests
+environment='remote' pytest tests
+```
+>Для локального запуска API тестов необходимо выполнить команду в СLI:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install poetry
+poetry install --no-root
+pytest tests/api_tests
 ```
 
 ----
