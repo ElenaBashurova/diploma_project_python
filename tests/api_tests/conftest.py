@@ -14,4 +14,5 @@ API_URL = "ttps://demowebshop.tricentis.com"
 @pytest.fixture()
 def browser_configs():
     browser.config.base_url = 'https://demowebshop.tricentis.com'
+    return browser_configs
 
