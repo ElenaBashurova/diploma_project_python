@@ -49,19 +49,27 @@ Python Pytest Selene Jenkins Selenoid Jenkins Allure reports Allure TestOps Tele
 ### Локальный запуск
 
 > Для локального запуска тестов необходимо выполнить команду в СLI:
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-environment='remote' pytest tests/ui_tests && pytest tests/api_tests
-```
+ Клонируйте репозиторий на свой локальный компьютер при помощи git clone
+2. Создайте и активируйте виртуальное окружение
+  ```bash
+  python -m venv .venv
+  source .venv/bin/activate
+  ```
+3. Установите зависимости с помощью pip
+  ```bash
+  pip install -r requirements.txt
+  ```
+4. Для запусков тестов локально используйте команд:
+  ```bash
+  pytest -sv -m web
+  pytest -sv -m api
+  ```
+
 Получение отчёта allure:
 ```bash
-allure serve allure-results
+allure/bin/allure.bat serve tests/api_tests/allure-results
+```
 
-----
-
-``` 
 <!-- Allure report -->
 ----
 ### <img width="5%" title="Allure Report" src="resources/logo/allure_report.png"> Allure report
