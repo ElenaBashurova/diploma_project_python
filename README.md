@@ -44,6 +44,8 @@ Python Pytest Selene Jenkins Selenoid Jira Allure reports Allure TestOps Telegra
 #### 4. Нажать **Собрать**
 #### 5. Результат запуска сборки можно посмотреть в отчёте Allure-testops
 
+## <img width="5%" title="Задача в Jire" src="design_resources/logo/jira.png"> Отчет в Allure-testops
+## [Allure-testops](https://allure.autotests.cloud/project/4080/dashboards)
 ![This is an image](/design_resources/screens/allure_testops.jpg)
 
 ----
