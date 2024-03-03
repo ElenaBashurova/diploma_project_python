@@ -78,7 +78,7 @@ allure/bin/allure.bat serve tests/api_tests/allure-results
 ![This is an image](/design_resources/screens/Allure_results.jpg)  
 
 ### Пример видеозаписи прохождения теста
-![This is an image](/design_resources/screens/видео.mp4)
+![This is an image](/design_resources/screens/видео.gif)
 
 <!-- Telegram -->
 ----
