@@ -14,7 +14,8 @@ from jsonschema import validate
 @allure.tag('api')
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
-@allure.story('Авторизация на сайте')
+@allure.story('Авторизация')
+@allure.title('Авторизация на сайте')
 def test_page_login(browser_configs_api):
     with step("Авторизация с API"):
         response = post_reqres("/login", json={"Email": LOGIN, "Password": PASSWORD}, allow_redirects=False)
