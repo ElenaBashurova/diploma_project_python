@@ -4,7 +4,7 @@ import pytest
 import requests
 from allure_commons._allure import step
 import utils.schema
-from tests.api_tests.conftest import LOGIN, PASSWORD, EMAIL
+from tests.api.conftest import LOGIN, PASSWORD, EMAIL
 from selene import browser, have
 from utils.utils_api import post_reqres
 from jsonschema import validate
@@ -15,7 +15,7 @@ from jsonschema import validate
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
 @allure.story('Авторизация на сайте')
-def test_page_login(browser_configs):
+def test_page_login(browser_configs_api):
     with step("Авторизация с API"):
         response = post_reqres("/login", json={"Email": LOGIN, "Password": PASSWORD}, allow_redirects=False)
     cookie = response.cookies.get("NOPCOMMERCE.AUTH")
@@ -34,7 +34,7 @@ def test_page_login(browser_configs):
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
 @allure.story('Добавить товар в корзину')
-def test_add_product_in_cart(browser_configs):
+def test_add_product_in_cart(browser_configs_api):
     with step("Добавить продукт в корзину"):
         response = post_reqres("/addproducttocart/catalog/45/1/1", data={
             "addtocart_45.EnteredQuantity": 4}, allow_redirects=False)
@@ -66,7 +66,7 @@ def test_add_product_in_cart(browser_configs):
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
 @allure.story('Неудачное добавление товара в корзину')
-def test_add_product_in_cart_fail(browser_configs):
+def test_add_product_in_cart_fail(browser_configs_api):
     with step("Добавить продукт в корзину"):
         response = post_reqres("/addproducttocart/details/1/2", data={
             "addtocart_2.EnteredQuantity": 1})
@@ -101,7 +101,7 @@ def test_add_product_in_cart_fail(browser_configs):
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
 @allure.story('Найти интересующий товар')
-def test_search_product(browser_configs):
+def test_search_product(browser_configs_api):
     with step("Найти продукт"):
         response = post_reqres("/catalog/searchtermautocomplete?term=Computer", data={
             "term": 'Computer'})
@@ -124,7 +124,7 @@ def test_search_product(browser_configs):
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
 @allure.story('Отправить email')
-def test_mail_send(browser_configs):
+def test_mail_send(browser_configs_api):
     with step("Отправить письмо на емайл"):
         response = post_reqres("/subscribenewsletter", json={"Email": EMAIL}, allow_redirects=False)
     cookie = response.cookies.get("Nop.customer")
