@@ -32,7 +32,6 @@ Python Pytest Selene Jenkins Selenoid Jenkins Allure reports Allure TestOps Tele
 </p>
 
 
-### Для запуска автотестов в Jenkins
 # Запуск автотестов выполняется на сервере Jenkins
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/project_bashurova_python">Ссылка на проект в Jenkins</a>
 #### 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/project_bashurova_python">проект</a>
