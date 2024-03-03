@@ -45,7 +45,7 @@ Python Pytest Selene Jenkins Selenoid Jira Allure reports Allure TestOps Telegra
 #### 5. Результат запуска сборки можно посмотреть в отчёте Allure-testops
 
 ## <img width="5%" title="Отчет Allure" src="design_resources/logo/allure_testops.png"> Отчет в Allure-testops
-## [Allure-testops](https://allure.autotests.cloud/project/4080/dashboards)
+## [Ссылка на Allure-testops](https://allure.autotests.cloud/project/4080/dashboards)
 ![This is an image](/design_resources/screens/allure_testops.jpg)
 
 ----
@@ -76,13 +76,13 @@ allure/bin/allure.bat serve tests/api/allure-results
 <!-- Jira -->
 ----
 ## <img width="5%" title="Задача в Jire" src="design_resources/logo/jira.png"> Создание задачи в Jira
-## [Ссылка на задачу](https://jira.autotests.cloud/browse/HOMEWORK-1138)
+## [Ссылка на задачу в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1138)
 ![This is an image](/design_resources/screens/Jira.jpg) 
 
 <!-- Allure report -->
 ----
 ## <img width="5%" title="Allure Report" src="design_resources/logo/allure_report.png"> Просмотр отчета по пройденным автотестам Allure Report
-## [Ссылка на отчет](https://jenkins.autotests.cloud/job/project_bashurova_python/48/allure/)
+## [Ссылка на отчет Allure report](https://jenkins.autotests.cloud/job/project_bashurova_python/48/allure/)
 ### Результаты тестов в Allure report
 ![This is an image](/design_resources/screens/Allure_results.jpg)  
 
