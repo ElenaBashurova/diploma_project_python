@@ -49,7 +49,7 @@ Python Pytest Selene Jenkins Selenoid Jenkins Allure reports Allure TestOps Tele
 ### Локальный запуск
 
 > Для локального запуска тестов необходимо выполнить команду в СLI:
- Клонируйте репозиторий на свой локальный компьютер при помощи git clone
+1. Скачайте репозиторий себе на компьютер
 2. Создайте и активируйте виртуальное окружение
   ```bash
   python -m venv .venv
@@ -59,7 +59,7 @@ Python Pytest Selene Jenkins Selenoid Jenkins Allure reports Allure TestOps Tele
   ```bash
   pip install -r requirements.txt
   ```
-4. Для запусков тестов локально используйте команд:
+4. Для запусков тестов локально используйте команды:
   ```bash
   pytest -sv -m web
   pytest -sv -m api
