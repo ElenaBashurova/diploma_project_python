@@ -64,7 +64,6 @@ Python Pytest Selene Jenkins Selenoid Jenkins Allure reports Allure TestOps Tele
   pytest -sv -m web
   pytest -sv -m api
   ```
-
 Получение отчёта allure:
 ```bash
 allure/bin/allure.bat serve tests/api_tests/allure-results
