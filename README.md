@@ -1,5 +1,6 @@
-# Проект по тестированию UI части интернет-магазина Офисмаг
-> <a target="_blank" href="https://www.officemag.ru/">Ссылка на Интернет-магазин</a>
+# Дипломный проект по автоматизации тестирования сайта
+> <a target="_blank" href="https://www.officemag.ru/">UI тесты</a>
+> <a target="_blank" href="https://demowebshop.tricentis.com/">Api тесты</a>
 
 #### Список проверок, реализованных в UI автотестах
 - [x] Проверка наличия категорий товаров
@@ -46,7 +47,7 @@ Python Pytest Selene Jenkins Selenoid Jira Allure reports Allure TestOps Telegra
 ![This is an image](/design_resources/screens/allure_testops.jpg)
 
 ----
-### Локальный запуск
+# Локальный запуск
 
 1. Скачайте репозиторий себе на компьютер
 2. Создайте и активируйте виртуальное окружение
@@ -67,22 +68,22 @@ Python Pytest Selene Jenkins Selenoid Jira Allure reports Allure TestOps Telegra
 ```bash
 allure/bin/allure.bat serve tests/api/allure-results
 ```
-#### Результаты тестов в Allure report
+### Результаты тестов в Allure report
 ![This is an image](/design_resources/screens/Allure_results.jpg)  
 ----
 ### Jira
 
-### <img width="5%" title="Задача в Jire" src="design_resources/logo/jira.png"> Jira
-### [Ссылка на задачу](https://jira.autotests.cloud/browse/HOMEWORK-1138)
+## <img width="5%" title="Задача в Jire" src="design_resources/logo/jira.png"> Jira
+## [Ссылка на задачу](https://jira.autotests.cloud/browse/HOMEWORK-1138)
 ![This is an image](/design_resources/screens/Jira.jpg) 
 
 
 ----
 ### Allure report
 
-### <img width="5%" title="Allure Report" src="design_resources/logo/allure_report.png"> Allure Report
-### [Ссылка на отчет](https://jenkins.autotests.cloud/job/project_bashurova_python/48/allure/)
-#### Результаты тестов в Allure report
+## <img width="5%" title="Allure Report" src="design_resources/logo/allure_report.png"> Allure Report
+## [Ссылка на отчет](https://jenkins.autotests.cloud/job/project_bashurova_python/48/allure/)
+### Результаты тестов в Allure report
 ![This is an image](/design_resources/screens/Allure_results.jpg)  
 
 ### Пример видеозаписи прохождения теста
@@ -90,8 +91,8 @@ allure/bin/allure.bat serve tests/api/allure-results
 
 <!-- Telegram -->
 ----
-### <img width="5%" title="Telegram" src="design_resources/logo/tg.png"> Telegram
+## <img width="5%" title="Telegram" src="design_resources/logo/tg.png"> Telegram
 
-#### Уведомление в Telegram bot после прохождения тестов
+### Уведомление в Telegram bot после прохождения тестов
 
 ![This is an image](design_resources/screens/Телеграм.jpg)
