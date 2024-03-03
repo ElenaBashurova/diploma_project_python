@@ -72,7 +72,7 @@ allure/bin/allure.bat serve tests/api/allure-results
 ![This is an image](/design_resources/screens/Allure_results.jpg)  
 ----
 
-## <img width="5%" title="Задача в Jire" src="design_resources/logo/jira.png"> Jira
+## <img width="5%" title="Задача в Jire" src="design_resources/logo/jira.png"> Создание задачи в Jira
 ## [Ссылка на задачу](https://jira.autotests.cloud/browse/HOMEWORK-1138)
 ![This is an image](/design_resources/screens/Jira.jpg) 
 
