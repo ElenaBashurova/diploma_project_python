@@ -17,6 +17,9 @@ def test_product_low_price(browser_configs):
     stock_page.catalog_stock()
 
 
+@allure.tag('web')
+@allure.label('layer', 'web')
+@allure.label('owner', 'e_bashurova')
 @pytest.mark.web
 @allure.title('Выбор товара из категории "Распродажи"')
 def test_product_stock(browser_configs):
@@ -24,6 +27,9 @@ def test_product_stock(browser_configs):
     stock_page.select_stock_products('Кресло компьютерное')
 
 
+@allure.tag('web')
+@allure.label('layer', 'web')
+@allure.label('owner', 'e_bashurova')
 @pytest.mark.web
 @allure.title('Проверить продукт на странице')
 def test_check_product(browser_configs):

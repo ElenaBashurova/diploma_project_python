@@ -17,6 +17,9 @@ def test_product_category(browser_configs):
     main_page.product_category('Деловые аксессуары')
 
 
+@allure.tag('web')
+@allure.label('layer', 'web')
+@allure.label('owner', 'e_bashurova')
 @pytest.mark.web
 @allure.title('Выбор подкатегории "Портфели, сумки, папки из кожи"')
 def test_subcategory_category(browser_configs):
@@ -25,6 +28,9 @@ def test_subcategory_category(browser_configs):
     category_name.select_subcategory('Портфели, сумки, папки из кожи')
 
 
+@allure.tag('web')
+@allure.label('layer', 'web')
+@allure.label('owner', 'e_bashurova')
 @pytest.mark.web
 @allure.title('Выбор категории через поиск')
 def test_category_search(browser_configs):
