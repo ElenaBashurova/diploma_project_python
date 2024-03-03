@@ -34,8 +34,7 @@ Python Pytest Selene Jenkins Selenoid Jira Allure reports Allure TestOps Telegra
 
 <!-- Jenkins -->
 ----
-# Запуск автотестов выполняется на сервере Jenkins
-## <img width="5%" title="Запуск автотестов в Jenkins" src="design_resources/logo/jenkins.png"> Запуск автотестов в Jenkins
+## <img width="5%" title="Запуск автотестов выполняется на сервере Jenkins" src="design_resources/logo/jenkins.png"> Запуск автотестов в Jenkins
 ## [Jenkins](https://allure.autotests.cloud/project/4080/dashboards)
 #### 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/project_bashurova_python">проект</a>
 
