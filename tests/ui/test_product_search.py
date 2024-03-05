@@ -1,7 +1,7 @@
 import allure
 import pytest
-from pages.product_pages import product_name
-from pages.product_select import search_name
+from diploma_project.pages.product_pages import product_name
+from diploma_project.pages.product_select import search_name
 
 
 @allure.tag('web')

@@ -1,7 +1,7 @@
 import pytest
 from selene import browser
 from selenium import webdriver
-from utils import attach
+from diploma_project.utils import attach
 from configs import config, setting
 
 LOGIN = "e_nikolaevnaya@mail.ru"

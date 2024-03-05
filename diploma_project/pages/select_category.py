@@ -1,6 +1,6 @@
 import allure
 from selene import have
-from pages.configs_helper import Helpers
+from diploma_project.utils.configs_helper import Helpers
 
 
 class CategoryPageName(Helpers):

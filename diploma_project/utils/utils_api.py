@@ -6,7 +6,7 @@ from allure_commons._allure import step
 from allure_commons.types import AttachmentType
 
 
-def post_reqres(url, **kwargs):
+def get_cookie(url, **kwargs):
     base_url = "https://demowebshop.tricentis.com"
     with step(f"POST {url}"):
         response = requests.post(base_url + url, **kwargs)

@@ -1,7 +1,7 @@
 import os
 from typing import Literal, Optional
 from pydantic_settings import BaseSettings
-from utils import path
+from diploma_project.utils import path
 from dotenv import load_dotenv
 
 

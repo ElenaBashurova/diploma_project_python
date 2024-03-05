@@ -2,7 +2,7 @@ import pytest
 from selene import browser
 from selenium import webdriver
 from configs import config, setting
-from utils import attach
+from diploma_project.utils import attach
 
 
 

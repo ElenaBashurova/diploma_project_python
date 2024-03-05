@@ -68,7 +68,7 @@ Python Pytest Selene Jenkins Selenoid Jira Allure reports Allure TestOps Telegra
   ```
 Получение отчёта allure:
 ```bash
-allure/bin/allure.bat serve tests/api/allure-results
+allure serve allure-results
 ```
 
 <!-- Jira -->
