@@ -1,4 +1,4 @@
-# Дипломный проект по автоматизации тестирования 
+# Дипломный проект по автоматизации тестирования для интернет-магазинов
 > <a target="_blank" href="https://www.officemag.ru/">UI тесты</a>
 > <a target="_blank" href="https://demowebshop.tricentis.com/">Api тесты</a>
 
