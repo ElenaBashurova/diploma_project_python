@@ -1,14 +1,14 @@
 import allure
-from selene import have
-from diploma_project.utils.configs_helper import Helpers
+from selene import have, browser
 
 
-class CategoryPageName(Helpers):
+
+class CategoryPageName:
 
     def select_subcategory(self, subcategory):
         with allure.step(f'Выбрать подкатегорию: "{subcategory}"'):
-            self.click_element('#bx_3909807802_458770')
-            self.elements('[href="/catalog/3888/"]').should(have.text(subcategory))
+            browser.element('#bx_3909807802_458770').click()
+            browser.element('[href="/catalog/3888/"]').should(have.text(subcategory))
 
 
 category_name = CategoryPageName()

@@ -6,7 +6,7 @@ from diploma_project.utils import attach
 
 
 
-@pytest.fixture()
+@pytest.fixture(scope='function', autouse=True)
 def browser_configs():
     browser.config.base_url = config.base_url
     browser.config.timeout = config.timeout
@@ -34,9 +34,6 @@ def browser_configs():
         )
 
         browser.config.driver = driver
-
-    else:
-        browser.config.driver_name = config.driver_name
 
     yield
 

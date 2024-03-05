@@ -10,9 +10,9 @@ from diploma_project.pages.main_page import main_page
 @allure.label('owner', 'e_bashurova')
 @allure.story('Выбор товара по акции')
 @allure.link('https://www.officemag.ru', name='Test')
-@allure.title('Выбор товара, по низкой цене')
+@allure.title('Проверка выбора товара')
 @pytest.mark.web
-def test_product_low_price(browser_configs):
+def test_check_choice_product():
     main_page.open_page()
     stock_page.catalog_stock()
 
@@ -21,8 +21,8 @@ def test_product_low_price(browser_configs):
 @allure.label('layer', 'web')
 @allure.label('owner', 'e_bashurova')
 @pytest.mark.web
-@allure.title('Выбор товара из категории "Распродажи"')
-def test_product_stock(browser_configs):
+@allure.title('Проверка выбора товара из категории "Распродажи"')
+def test_check_product_stock():
     stock_page.open_page_stock()
     stock_page.select_stock_products('Кресло компьютерное')
 
@@ -31,8 +31,8 @@ def test_product_stock(browser_configs):
 @allure.label('layer', 'web')
 @allure.label('owner', 'e_bashurova')
 @pytest.mark.web
-@allure.title('Проверить продукт на странице')
-def test_check_product(browser_configs):
+@allure.title('Проверка продукта на странице')
+def test_check_product():
     stock_page.open_page_stock()
     stock_page.select_stock_products('Кресло компьютерное')
     stock_page.check_name_product()

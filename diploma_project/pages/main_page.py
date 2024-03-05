@@ -4,27 +4,27 @@ from selene import have
 from selene import browser
 
 
-class Page(Helpers):
+class Page:
     def open_page(self):
         with allure.step('Открыть страницу https://www.officemag.ru'):
             browser.open('/')
-            self.click_element('#fancybox-close')
-            self.click_element('.js-cityDetector')
-            self.click_element('#fancybox-close')
+            browser.element('#fancybox-close').click()
+            browser.element('.js-cityDetector').click()
+            browser.element('#fancybox-close').click()
         return self
 
     def product_category(self, category_name):
         with allure.step(f'Выбрать из категорий: "{category_name}"'):
-            self.click_element('.js-rubricatorButton')
-            self.click_element('[alt="Деловые аксессуары"]')
+            browser.element('.js-rubricatorButton').click()
+            browser.element('[alt="Деловые аксессуары"]').click()
         return self
 
     def search_product_by_button(self, product_name):
         with allure.step('На странице сделать клик на кнопку поиска'):
-            self.click_element('[placeholder="Поиск по названию или коду товара"]')
+            browser.element('[placeholder="Поиск по названию или коду товара"]').click()
         with allure.step(f'Ввести в строку поиска: "{product_name}"'):
-            self.elements(".ui-autocomplete-input").set_value(product_name).press_enter()
-            self.elements('.searchQuery').should(have.text('Вы искали'))
+            browser.element(".ui-autocomplete-input").set_value(product_name).press_enter()
+            browser.element('.searchQuery').should(have.text('Вы искали')).click()
         return self
 
 

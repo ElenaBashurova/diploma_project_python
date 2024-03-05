@@ -8,8 +8,6 @@ from dotenv import load_dotenv
 
 def setting():
     load_dotenv()
-    login: str = os.getenv("LOGIN")
-    password: str = os.getenv("PASSWORD")
     url: str = os.getenv("URL")
     remote_url = f'{url}'
     return remote_url

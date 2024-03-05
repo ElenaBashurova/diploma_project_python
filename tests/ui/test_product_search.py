@@ -10,9 +10,9 @@ from diploma_project.pages.product_select import search_name
 @allure.story('Поиск товара')
 @pytest.mark.xfail(reason='Этот тест не стабилен')
 @allure.link('https://www.officemag.ru', name='Test')
-@allure.title('Поиск товара "Кресло компьютерное"')
+@allure.title('Проверка поиска товара "Кресло компьютерное"')
 @pytest.mark.web
-def test_search_product(browser_configs):
+def test_check_search_product():
     search_name.open_page()
     search_name.search_product_enter("Кресло компьютерное")
     product_name.page_name_product("Кресло BRABIX «Fly MG-396», с подлокотниками, сетка, черное, 532083")
@@ -22,8 +22,8 @@ def test_search_product(browser_configs):
 @allure.label('layer', 'web')
 @allure.label('owner', 'e_bashurova')
 @pytest.mark.web
-@allure.title('Поиск товара "Шкаф"')
-def test_search_by_part_of_name(browser_configs):
+@allure.title('Проверка поиска товара "Шкаф"')
+def test_check_search_closet():
     search_name.open_page()
     search_name.search_part_product('Шк')
 
@@ -32,8 +32,8 @@ def test_search_by_part_of_name(browser_configs):
 @allure.label('layer', 'web')
 @allure.label('owner', 'e_bashurova')
 @pytest.mark.web
-@allure.title('Поиск товара "Кофе"')
-def test_search_by_foreign_name(browser_configs):
+@allure.title('Проверка поиска категории товара "Кофе"')
+def test_check_search_coffee():
     search_name.open_page()
     search_name.search_foreign_product('Кофе в зернах Якобс')
     product_name.foreign_name_product('Кофе в зернах JACOBS «Crema» 1 кг')
@@ -43,7 +43,7 @@ def test_search_by_foreign_name(browser_configs):
 @allure.label('layer', 'web')
 @allure.label('owner', 'e_bashurova')
 @pytest.mark.web
-@allure.title('Поиск товара "Чай"')
-def test_search_by_foreign_keyboard_layout(browser_configs):
+@allure.title('Проверка поиска категории товара "Чай"')
+def test_check_search_tea():
     search_name.open_page()
     search_name.search_keyboard_layout_product('Tea green')

@@ -10,9 +10,9 @@ from diploma_project.pages.main_page import main_page
 @allure.label('owner', 'e_bashurova')
 @allure.story('Выбор товара по категории')
 @allure.link('https://www.officemag.ru', name='Test')
-@allure.title('Выбор категории "Деловые аксессуары"')
+@allure.title('Проверка выбора категории "Деловые аксессуары"')
 @pytest.mark.web
-def test_product_category(browser_configs):
+def test_check_category_product():
     main_page.open_page()
     main_page.product_category('Деловые аксессуары')
 
@@ -21,8 +21,8 @@ def test_product_category(browser_configs):
 @allure.label('layer', 'web')
 @allure.label('owner', 'e_bashurova')
 @pytest.mark.web
-@allure.title('Выбор подкатегории "Портфели, сумки, папки из кожи"')
-def test_subcategory_category(browser_configs):
+@allure.title('Проверка выбора подкатегории "Портфели, сумки, папки из кожи"')
+def test_check_subcategory_product():
     main_page.open_page()
     main_page.product_category('Деловые аксессуары')
     category_name.select_subcategory('Портфели, сумки, папки из кожи')
@@ -32,7 +32,7 @@ def test_subcategory_category(browser_configs):
 @allure.label('layer', 'web')
 @allure.label('owner', 'e_bashurova')
 @pytest.mark.web
-@allure.title('Выбор категории через поиск')
-def test_category_search(browser_configs):
+@allure.title('Проверка выбора категории через поиск')
+def test_check_search_category():
     main_page.open_page()
     main_page.search_product_by_button("Деловые аксессуары")
