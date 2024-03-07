@@ -138,7 +138,7 @@ def test_get_info_product_fail():
 @allure.title('Проверка обновления информации о товаре')
 def test_put_update_product():
     response = request_api('/update/', data={
-        "id": '158'
+        "id": 158
     })
 
     with allure.step('Статус код=200'):
