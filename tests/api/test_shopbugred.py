@@ -1,10 +1,5 @@
-import json
-
 import allure
-import logging
 import pytest
-import requests
-from allure_commons._allure import step
 from diploma_project.utils.schema_api import product_create_post, product_create_post_fail, product_info_get, \
     product_info_get_fail, product_update_put, product_delete
 from jsonschema import validate
