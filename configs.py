@@ -18,7 +18,6 @@ class Config(BaseSettings):
     environment: Literal['remote', 'local'] = 'local'
 
     base_url: str = 'https://www.officemag.ru'
-    base_url_2: str = 'https://demowebshop.tricentis.com'
     driver_name: str = 'chrome'
     load_strategy: str = 'eager'
     window_width: int = 1920

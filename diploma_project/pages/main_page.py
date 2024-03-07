@@ -1,5 +1,4 @@
 import allure
-from diploma_project.utils.configs_helper import Helpers
 from selene import have
 from selene import browser
 
