@@ -152,7 +152,7 @@ def test_put_update_product():
 @allure.tag('api')
 @allure.label('layer', 'API')
 @allure.label('owner', 'e_bashurova')
-@allure.story('Удаление товара на сайта')
+@allure.story('Удаление товара c сайта')
 @allure.title('Проверка удаления товара')
 def test_delete_product():
     response = request_api('/delete/', data={

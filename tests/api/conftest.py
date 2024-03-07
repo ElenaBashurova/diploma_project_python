@@ -11,4 +11,3 @@ API_URL = "http://shop.bugred.ru"
 def load_env():
     load_dotenv()
 
-
