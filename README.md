@@ -76,7 +76,7 @@ allure serve allure-results
 ----
 ## <img width="5%" title="Задача в Jire" src="design_resources/logo/jira.png"> Создание задачи в Jira
 ## [Ссылка на задачу в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1138)
-![This is an image](/design_resources/screens/Jira.jpg) 
+![This is an image](/design_resources/screens/Jira_task.jpg) 
 
 <!-- Allure report -->
 ----
