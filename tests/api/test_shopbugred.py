@@ -40,7 +40,6 @@ def test_create_product():
         assert str(response.json()['result']['color']) == 'BLUE'
     with allure.step('Проверка размера товара'):
         assert str(response.json()['result']['size']) == '44'
-    print()
 
 
 @pytest.mark.api
