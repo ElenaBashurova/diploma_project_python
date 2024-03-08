@@ -1,6 +1,6 @@
 import allure
 import pytest
-from diploma_project.pages.stock_product import stock_page
+from diploma_project.pages.stock_product_page import stock_page
 from diploma_project.pages.main_page import main_page
 
 

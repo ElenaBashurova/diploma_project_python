@@ -1,6 +1,6 @@
 import allure
 import pytest
-from diploma_project.pages.select_category import category_name
+from diploma_project.pages.select_category_page import category_name
 from diploma_project.pages.main_page import main_page
 
 

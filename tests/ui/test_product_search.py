@@ -1,7 +1,7 @@
 import allure
 import pytest
 from diploma_project.pages.product_pages import product_name
-from diploma_project.pages.product_select import search_name
+from diploma_project.pages.product_select_page import search_name
 
 
 @allure.tag('web')
@@ -15,17 +15,17 @@ from diploma_project.pages.product_select import search_name
 def test_check_search_product():
     search_name.open_page()
     search_name.search_product_enter("Кресло компьютерное")
-    product_name.page_name_product("Кресло BRABIX «Fly MG-396», с подлокотниками, сетка, черное, 532083")
+    product_name.page_name_product("Кресло BRABIX «Tender MG-330», с подлокотниками, хром, черное, 531845")
 
 
 @allure.tag('web')
 @allure.label('layer', 'web')
 @allure.label('owner', 'e_bashurova')
 @pytest.mark.web
-@allure.title('Проверка поиска товара "Шкаф"')
+@allure.title('Проверка поиска товара "Шкаф(Стеллаж)"')
 def test_check_search_closet():
     search_name.open_page()
-    search_name.search_part_product('Шк')
+    search_name.search_part_product('Шкаф(Стеллаж)')
 
 
 @allure.tag('web')
@@ -47,3 +47,4 @@ def test_check_search_coffee():
 def test_check_search_tea():
     search_name.open_page()
     search_name.search_keyboard_layout_product('Tea green')
+
