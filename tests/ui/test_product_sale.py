@@ -1,6 +1,6 @@
 import allure
 import pytest
-from diploma_project.pages.stock_product_page import stock_page
+from diploma_project.utils.stock_product import stock_page
 from diploma_project.pages.main_page import main_page
 
 
@@ -14,6 +14,7 @@ from diploma_project.pages.main_page import main_page
 def test_check_choice_product():
     main_page.open_page()
     stock_page.catalog_stock()
+
 
 
 @allure.tag('web')
